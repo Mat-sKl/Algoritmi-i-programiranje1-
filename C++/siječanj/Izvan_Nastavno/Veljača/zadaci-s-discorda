@@ -1,0 +1,125 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+/*   Z1 napiši program koji ispiše je li
+        broj negativan ili pozitivan.
+
+     Z2 napiši program koji ispiše je li broj
+        paran ili neparan
+
+     Z3 napiši program koji ispiše cijenu sendviča s PDV-om
+        Unosimo cijenu sendvica BEZ PDV-a
+
+     Z4 napiši program koji ispiše jesu li dva
+        učitana znaka učitana abecednim redom
+
+     Z5 napisi program koji ispise ukupni otpor
+        jednostavnog strujnog kruga za dva otpora.
+        Unosi se nacin spoja:
+            'p' za paralelan spoj
+            's' za serijski spoj
+        te vrijednosti dva otpora (integera)
+        p 10 10
+        s 10 10
+
+     Z6 napiši program koji izračuna
+        R za uneseni U i I
+        U za uneseni R i I
+        I za uneseni R i U
+        (korisnik unosi: 'R', 'U', 'I' te ostale vrijednosti) */
+//--------------------------------------------------------------------
+/* ZADATAK 1
+
+int broj;
+cout<<"Unesi neki broj (moze biti negativan ili pozitivan): ";
+cin>>broj;
+if (broj<0){
+    cout<<"Broj je negativan.";
+}
+if (broj>0){
+    cout<<"Broj je pozitivan.";
+}
+return 0; */
+
+//--------------------------------------------------------------------
+/* ZADATAK 2
+
+int broj;
+cout<<"Unesi neki broj (moze biti paran ili neparan): ";
+cin>>broj;
+if (broj%2==0){
+    cout<<"Broj je paran.";
+}
+if (broj%2!=0){
+    cout<<"Broj je neparan.";
+}
+return 0; */
+
+//--------------------------------------------------------------------
+/*ZADATAK 3
+
+float cijena, PDV;
+PDV=0.05;
+cout<<"Unesi cijenu sendvica (BEZ PDV-a): ";
+cin>>cijena;
+cijena=cijena+(cijena*PDV);
+cout<<"Cijena s PDV-om iznosi: "<<cijena;
+return 0; */
+
+//--------------------------------------------------------------------
+/*ZADATAK 4
+
+char z1, z2;
+cout<<"Unesi prvi znak: ";
+cin>>z1;
+cout<<"Unesi drugi znak: ";
+cin>>z2;
+if (z1<z2){
+    cout<<"Slova su ucitana abecednim redom.";
+}
+if (z2<z1){
+    cout<<"Slova nisu ucitana abecednim redom.";
+}
+return 0; */
+
+//--------------------------------------------------------------------
+/*ZADATAK 5
+
+char spoj;
+int r1, r2, rezultat;
+scanf("%c %i %i", &spoj, &r1, &r2);
+if (spoj=='s'){
+    rezultat=r1+r2;
+    printf("%i+%i=%i", r1, r2, rezultat);
+}
+if (spoj=='p'){
+    rezultat=(r1*r2)/(r1+r2);
+    printf("(%i*%i)/(%i+%i)=%i", r1, r2, r1, r2, rezultat);
+}
+return 0; */
+
+//--------------------------------------------------------------------
+/*ZADATAK 6 */
+char izbor;
+float R,U,I,rezultat;
+scanf(" %c", &izbor);
+if (izbor == 'R') {
+    scanf("%f %f", &U, &I);
+    rezultat = U / I;
+    printf("R = %f Ohm\n", rezultat);
+    }
+else if (izbor == 'U') {
+    scanf("%f %f", &R, &I);
+    rezultat = R * I;
+    printf("U = %f V", rezultat);
+    }
+else if (izbor == 'I') {
+    scanf("%f %f", &U, &R);
+    rezultat = U / R;
+    printf("I = %f A", rezultat);
+    }
+return 0;
+}
