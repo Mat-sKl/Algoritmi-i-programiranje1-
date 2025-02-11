@@ -1,0 +1,79 @@
+#include <iostream>
+#include <cmath> //omogucava koristenje slozenijih matematickih funkcija
+#include <string> //omogucuje upisivanje recenica
+using namespace std;
+
+int main()
+{
+string izbor;
+cout<<"Unesi 'pp' ako zelis izracunati pitagorin poucak"<<endl;
+cout<<"Unesi 'rt' ako zelis izracunati opseg i povrsinu raznostranicnog trokuta"<<endl;
+cout<<"Unesi 'js' ako zelis izracunati opseg i povrsinu jednakostranicnog trokuta"<<endl;
+cout<<"Unesi 'jk' ako zelis izracunati opseg i povrsinu jednakokracnog trokuta"<<endl;
+cout<<"Unesi 'pt' ako zelis izracunati opseg i povrsinu pravokutnog trokuta"<<endl;
+cin>>izbor;
+
+if (izbor=="pp"){
+float s1, s2, ss1, ss2, ss3;
+        cout<<"Unesi duljinu prve stranice: ";
+        cin>>s1;
+        cout<<"Unesi duljinu druge stranice: ";
+        cin>>s2;
+        ss1=s1*s1;
+        ss2=s2*s2;
+        ss3=ss1+ss2;
+        cout<<"Duljina trece stranice iznosi: "<<sqrt(ss3);
+        return 0;
+ }
+
+if(izbor=="rt"){
+float a,b,c,opseg,povrsina;
+        cout<<"Unesi duljinu prve stranice:";
+        cin>>a;
+        cout<<"Unesi duljinu druge stranice:";
+        cin>>b;
+        cout<<"Unesi duljinu trece stranice:";
+        cin>>c;
+float s=(a+b+c)/2; //heronova formula
+        povrsina=sqrt(s);
+        opseg=a+b+c;
+        cout<<"Opseg raznostranicnog trokuta iznosi: "<<opseg<<endl;
+        cout<<"Povrsina raznostranicnog trokuta iznosi: "<<povrsina<<endl;
+ }
+
+if(izbor=="js"){
+float a, povrsina, opseg;
+        cout<<"Unesi duljinu stranice jednakostranicnog trokuta: ";
+        cin>>a;
+        povrsina=(sqrt(3)/4)*(a*a);
+        opseg=3*a;
+        cout<<"Povrsina jednakostranicnog trokuta iznosi: "<<povrsina<<endl;
+        cout<<"Opseg jednakostranicnog trokuta iznosi: "<<opseg;
+ }
+
+if(izbor=="jk"){
+float a, b, povrsina, opseg;
+        cout<<"Unesi duljinu prve dvije stranice (one koje imaju jednaku vrijednost): ";
+        cin>>a;
+        cout<<"Unesi duljinu druge stranice: ";
+        cin>>b;
+        povrsina=(sqrt(a*a-(b*b/4))*b)/2;
+        opseg=a+(2*b);
+        cout<<"Povrsina jednakokracnog trokuta iznosi: "<<povrsina<<endl;
+        cout<<"Opseg jednakokracnog trokuta iznosi: "<<opseg;
+ }
+
+if(izbor=="pt"){
+float a, b, povrsina, opseg, c;
+        cout<<"Unesi duljinu prve katete a: ";
+        cin>>a;
+        cout<<"Unesi duljinu druge katete b: ";
+        cin>>b;
+        cout<<"Unesi duljinu hipotenuze c: ";
+        cin>>c;
+        povrsina=(a*b)/2;
+        opseg=a+b+c;
+        cout<<"Povrsina pravokutnog trokuta iznosi: "<<povrsina<<endl;
+        cout<<"Opseg pravokutnog trokuta iznosi: "<<opseg;
+ }
+}
