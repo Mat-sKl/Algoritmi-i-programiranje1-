@@ -9,7 +9,7 @@ int main(){
   case 1 ...9:
   while (i<10) {
     cout<<i<<endl;
-    i++; //dodaje +1 na broj i i ispisuje
+    i++; //dodaje +1 na broj i te ga ispisuje
   }
   break;
   case 10 ... 99999:
