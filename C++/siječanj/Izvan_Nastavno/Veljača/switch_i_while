@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+  int i;
+  cout<<"Unesi neki cijeli broj manji od 10: ";
+  cin>>i;
+  switch(i){
+  case 1 ...9:
+  while (i<10) {
+    cout<<i<<endl;
+    i++; //dodaje +1 na broj i i ispisuje
+  }
+  break;
+  case 10 ... 99999:
+    cout<<"Greska, uneseni broj je veci od 10. Molim unesite broj koji je manji od 10: ";
