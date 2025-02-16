@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+cout<<"Unesi '1' ako zelis Celzijeve stupnjeve pretvoriti u Kelvine i Fahrenheite"<<endl<<"Unesi '2' ako zelis Fahrenheite pretvoriti u Celzijeve stupnjeve i Kelvine"<<endl<<"Unesi '3' ako zelis Kelvine pretvoriti u Celzijeve stupnjeve i Fahrenheite."<<endl;
+int izbor;
+cin>>izbor;
+float c,f,k;
+switch (izbor){
+    case 1:
+        cout<<"Unesi temperaturu u Celzijevim stupnjevima: ";
+        cin>>c;
+        f=(c*1.8)+32;
+        k=c+273.15;
+        cout<<"Temperatura u Fahrenheitima iznosi: "<<f<<endl;
+        cout<<"Temperatura u Kelvinima iznosi: "<<k;
+        break;
+    case 2:
+        cout<<"Unesi temperaturu u Fahrenheitima: ";
+        cin>>f;
+        c=(f-32)/1.8;
+        k=c+273.15;
+        cout<<"Temperatura u Celzijevim stupnjevima iznosi: "<<c<<endl;
+        cout<<"Temperatura u Kelvinima iznosi: "<<k;
+        break;
+    case 3:
+        cout<<"Unesi temperaturu u Kelvinima: ";
+        cin>>k;
+        if (k<0){
+            cout<<"Neispravan unos";
+        }
+        else{
+        c=k-273.15;
+        f=(c*1.8)+32;
+        cout<<"Temperatura u Fahrenheitima iznosi: "<<f<<endl;
+        cout<<"Temperatura u Celzijevim stupnjevima iznosi: "<<c;
+        break;
+    default:
+        cout<<"Neispravan unos."<<endl;
+        }
+  }
+return 0;
+}
+//NAPOMENA: kad upišem temperaturu u kelvinim stupnjevima da iznosi 273.15 mi temperatura u celzijevim stupnjevima iznosi -6.10352e-06
