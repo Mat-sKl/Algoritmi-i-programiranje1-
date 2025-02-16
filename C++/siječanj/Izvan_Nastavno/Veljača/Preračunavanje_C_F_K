@@ -31,7 +31,9 @@ switch (izbor){
             cout<<"Neispravan unos";
         }
         else{
-        c=k-273.15;
+        float a;
+        a=273.15;
+        c=k-a;
         f=(c*1.8)+32;
         cout<<"Temperatura u Fahrenheitima iznosi: "<<f<<endl;
         cout<<"Temperatura u Celzijevim stupnjevima iznosi: "<<c;
@@ -42,4 +44,3 @@ switch (izbor){
   }
 return 0;
 }
-//NAPOMENA: kad upišem temperaturu u kelvinim stupnjevima da iznosi 273.15 mi temperatura u celzijevim stupnjevima iznosi -6.10352e-06
