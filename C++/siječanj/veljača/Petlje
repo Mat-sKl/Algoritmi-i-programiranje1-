@@ -1,0 +1,73 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+/* ZADATAK 1
+
+int a,b;
+cout<<"Unesi neki cijeli broj (a): ";
+cin>>a;
+cout<<"Unesi neki cijeli broj koji je veci od prvoga (b): ";
+cin>>b;
+    for (a; a<=b; a++){
+        cout<<a<<",";
+}*/
+//---------------------------------------------------------
+/* ZADATAK 2
+int a,b;
+cout<<"Unesi neki cijeli broj (a): ";
+cin>>a;
+cout<<"Unesi neki cijeli broj koji je veci od prvoga (b): ";
+cin>>b;
+for (b; a<=b; b--){
+        cout<<b<<",";
+    }*/
+//---------------------------------------------------------
+/* ZADATAK 3
+int a,b;
+cout<<"Unesi neki cijeli broj (a): ";
+cin>>a;
+cout<<"Unesi neki cijeli broj koji je veci od prvoga(b): ";
+cin>>b;
+if (a%2==0)
+a=a;
+else
+    a+=1;
+for (a;a<=b;a+=2)
+    cout<<a<<",";
+*/
+//---------------------------------------------------------
+/* ZADATAK 4
+char a,b;
+cout<<"Unesi neko slovo: ";
+cin>>a;
+cout<<"Unesi neko slovo koje je vece od prvoga: ";
+cin>>b;
+for (a; a<=b; a++){
+    cout<<(char) a<<",";
+}*/
+//---------------------------------------------------------
+/* ZADATAK 5
+char a,b;
+cout<<"Unesi neko slovo: ";
+cin>>a;
+cout<<"Unesi neko slovo koje je vece od prvoga: ";
+cin>>b;
+    for (b; b<=122; b++){
+    cout<<b<<",";
+    }
+    for (int i=97; i<=a; i++){
+    cout<<(char)i<<",";
+    }
+                 ILI
+
+for (b; b!=a; b++{
+  if (b>'z')
+      b='a';
+cout<<b<<endl;
+}
+*/
+//-----------------------------
+}
