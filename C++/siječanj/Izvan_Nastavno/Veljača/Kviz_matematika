@@ -1,0 +1,92 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int bb=0;
+    int p1;
+    cout<<"Rijesi jednadzbu: 3x-5=2x+7"<<endl;
+    cout<<"x= ";
+    cin>>p1;
+    switch (p1) {
+        case 13:
+            cout<<"Tocan odgovor!"<<endl<<endl;
+            bb=bb+1;
+            break;
+        default:
+            cout<<"Netocan odgovor!"<<endl<<endl;
+            break;
+    }
+    int p2;
+    cout<<"Izracunaj vrednost izraza ako je a=2 i b=-3"<<endl;
+    cout<<"Izraz: ((a * a) - (b * b)) / (a - b)"<<endl;
+    cout<<"Rjesenje: ";
+    cin>>p2;
+    switch (p2){
+        case 5:
+            cout<<"Tocan odgovor!"<<endl<<endl;
+            bb=bb+1;
+            break;
+        default:
+            cout<<"Netocan odgovor!"<<endl<<endl;
+            break;
+    }
+    int p3;
+    cout<<"Brat ima 4 godine manje nego sestra. Ako je zbroj njihovih godina 28, koliko godina ima brat?"<<endl;
+    cout<<"Rjesenje: ";
+    cin>>p3;
+    switch (p3){
+        case 12:
+            cout<<"Tocan odgovor!"<<endl<<endl;
+            bb=bb+1;
+            break;
+        default:
+            cout<<"Netocan odgovor!"<<endl<<endl;
+            break;
+    }
+    int p4;
+    cout<<"Iz proslog zadatka odredi koliko godina ima sestra."<<endl;
+    cout<<"Rjesenje: ";
+    cin>>p4;
+    switch (p4){
+        case 16:
+            cout<<"Tocan odgovor!"<<endl<<endl;
+            bb=bb+1;
+            break;
+        default:
+            cout<<"Netocan odgovor!"<<endl<<endl;
+            break;
+    }
+    int p5;
+    cout<<"Rijesi nejednadzbu 2x+3<5x-9"<<endl;
+    cout<<"x > ";
+    cin>>p4;
+    switch (p4){
+        case 4:
+            cout<<"Tocan odgovor!"<<endl<<endl;
+            bb=bb+1;
+            break;
+        default:
+            cout<<"Netocan odgovor!"<<endl<<endl;
+            break;
+}
+   if (bb==5){
+    cout<<"Bravo! Imas 5/5 tocnih odgovora!";
+   }
+   if (bb==4){
+    cout<<"Vrlo dobro! Imas 4/5 tocnih odgovora!";
+   }
+   if (bb==3){
+    cout<<"Dobro! Imas 3/5 tocnih odgovora!";
+   }
+   if (bb==2){
+    cout<<"Dovoljno! Imas 2/5 tocnih odgovora!";
+   }
+   if (bb==1){
+    cout<<"Nedovoljno! Imas 1/5 tocnih odgovora!";
+   }
+   if (bb==0){
+    cout<<"Jesi li uopce probao? Imas 0/5 tocnih odgovora!";
+   }
+}
