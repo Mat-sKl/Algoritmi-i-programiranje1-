@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int b,nb;
+cin>>b;
+nb=b;
+while(b!=0){
+    cin>>b;
+    if(b==0){
+        break;
+    }
+    if(nb>b){
+        nb=b;
+    }
+}
+cout<<nb;
+}
