@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int b,z;
+cin>>b;
+while(b>0){
+    z=b%10;
+    b/=10;
+    cout<<z<<" ";
+}
+}
