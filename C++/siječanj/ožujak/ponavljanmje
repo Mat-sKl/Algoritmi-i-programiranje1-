@@ -1,0 +1,158 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+/*    // 1
+    char uneseni;
+    char prijasnji;
+    cin>>uneseni;
+    int brojUnesenih=0;
+    do{
+        prijasnji=uneseni;
+        cin>>uneseni;
+        brojUnesenih++;
+    }while(uneseni>=prijasnji);*/
+//---------------------------------------------------------------------------
+//2 napisi program koji ispise zbroj znamenki nekog broja
+/*int broj;
+int zbroj;
+cin>>broj;
+zbroj=0;
+do{
+    zbroj+=broj%10;
+    broj/=10;
+}while(broj>0);
+cout<<"Zbroj je "<<zbroj;*/
+//---------------------------------------------------------------------------
+//3
+/*int broj, odluka, nBroj;
+cout<<"Unesi broj: ";
+cin>>broj;
+cout<<"Zelis li nastiviti? ";
+cin>>odluka;
+nBroj=broj;
+while(odluka!=0){
+    cout<<"Unesi broj: ";
+    cin>>broj;
+    cout<<"Zelis li nastiviti? ";
+    cin>>odluka;
+    if(broj>nBroj){
+        nBroj=broj;
+    }
+}
+cout<<"Najveci broj je: "<<nBroj;*/
+//--------------------------------------------------------------------------
+//4
+/*int broj, zbroj, bBrojeva;
+zbroj=0;
+bBrojeva=0;
+do{
+  cin>>broj;
+  bBrojeva++;
+  zbroj+=broj;
+}while(zbroj!=666);
+cout<<bBrojeva;*/
+//--------------------------------------------------------------------------
+//5
+/*int broj, npb, nnb, nb, pb, bd3;
+npb=0;
+nnb=0;
+nb=0;
+pb=0;
+bd3=0;
+do{
+    cin>>broj;
+    if(broj%3==0){
+        bd3++;}
+    if(broj%2==0){
+        pb++;
+    }
+    else if(broj%2!=0){
+        nb++;
+    }
+    if(broj<0){
+        nnb++;}
+    if(broj>0){
+        npb++;}
+}while(broj!=0);
+cout<<bd3<<endl;
+cout<<pb<<endl;
+cout<<nb<<endl;
+cout<<nnb<<endl;
+cout<<npb<<endl;*/
+//------------------------------------------------------------------------
+//6
+//Ispiši sve brojeve djeljive sa 11 od 20 do 100. Umjesto broja 77 ispisati rijeèima "Sedamdeset i sedam".
+/*for (int i = 20; i <= 100; i++){
+    if (i % 11 == 0){
+    cout <<"Sedamdeset i sedam"<<endl;
+    if (i == 77){
+    }
+    else {
+    cout <<i<<endl;
+    }
+}
+}
+    return 0;*/
+//------------------------------------------------------------------------
+//7
+/*for(int i=5;i<=150;i++){
+    if(i%13==0){
+        cout<<i<<endl
+    }
+}*/
+//---------------------------------------------------------------------------------
+//8 Uèitati 10 brojeva. Koliko je uèitano parnih brojeva i koliki je njihov zbroj.
+/*int zbroj, npb, broj, ppb;
+npb=0;
+zbroj=0;
+for(int i; i<11;i++){
+        cin>>broj;
+    if(i%2==0){
+        npb++;
+        ppb=broj;
+        zbroj+=broj;
+    }
+
+}
+cout<<npb<<endl;
+cout<<zbroj<<endl;*/
+//---------------------------------------------------------------------------------
+//9
+/*int n, avg, broj;
+avg=0;
+cin>>n;
+for(int i=1; i<=n;i++){
+    cin>>broj;
+    avg=avg+broj;
+}
+avg=avg/n;
+cout<<avg;
+*/
+//---------------------------------------------------------------------------------
+//10
+/*int broj, pz, dz, tz, zz;
+for(int i=1;i<11;i++){
+    cin>>broj;
+    tz=broj%10;
+    pz=broj/100;
+    dz=(broj/10)%10;
+    zz=pz+dz+tz;
+    if(zz>8){
+        cout<<zz<<endl;
+    }
+}*/
+//---------------------------------------------------------------------------------
+int broj, snb, n;
+snb=0;
+cin>>n;
+for(int i=0;i<n;i++){
+        cin>>broj;
+if(broj%2!=0){
+        snb+=broj;
+  }
+}
+cout<<snb;
+}
