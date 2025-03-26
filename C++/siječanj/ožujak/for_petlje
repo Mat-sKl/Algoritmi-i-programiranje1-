@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+//tablica mnozenja
+  /*int b, m;
+   for (m=0;m<11;m++){
+    for(b=0;b<11;b++){
+            cout<<b*m<<"\t";
+  }
+  cout<<endl;
+}*/
+//----------------------------------------------------
+//ispis brojeva od 1 do n
+/*int n;
+cin>>n;
+for (int i=1;i<=n;i++){ //redak
+    for (int j=1;j<=i;j++){ //1 do n
+        cout<<j<<" ";
+    }
+    cout<<endl;
+}*/
+//----------------------------------------------------
+//ispis brojeva od 9 do 0 u obliku cetverokuta
+/*for(int i=9;i>=0;i--){
+    for(int j=10;j>=0;j--){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}*/
+//----------------------------------------------------
+for(int i=0;i<9;i++){ //odreduje redak
+    for(int j=0;j<i;j++){
+        cout<<" "; //i broj razmaka
+    }
+    for(int j=0;j<(9-i);j++){ //ispisuje brojeve
+        cout<<9-i;
+    }
+    cout<<endl;
+}
+}
