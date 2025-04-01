@@ -1,0 +1,14 @@
+float mj;
+int ns, ms, n;
+cin>>n;
+ms=0;
+for(int i=0;i<n;i++){
+    cin>>mj;
+    ms+=(mj*1000);
+    if(ms>=1000){
+        ns++;
+        ms=0;
+    }
+}
+cout<<ns;
+}
