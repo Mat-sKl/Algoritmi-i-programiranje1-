@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int n;
+cout<<"Koliko polja zelis koristiti? ";
+cin>>n;
+int p[n];
+for(int i=0;i<n;i++){
+cin>>p[n];
+}
+int opcija;
+int polje;
+cout<<"Zelis li pregledati sto si upisao u neko polje?(0=ne, 1=da) ";
+cin>>opcija;
+int opcija2;
+while(opcija!=0 && opcija==1){
+    cout<<"Unesi koje polje zelis vidjeti: ";
+    cin>>polje;
+    cout<<p[polje]<<endl;
+    cout<<"Zelis li nastaviti? (0=ne, 1=da): ";
+    cin>>opcija2;
+    if(opcija2==0)
+        break;
+    else
+        continue;
+}
+}
