@@ -1,0 +1,106 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+//1.
+    /*int a=10;
+    int b=100;
+    int n=0;
+    int p[1000];
+    for(int i=0;i<1000;i++)
+        {
+            p[i]=rand()%(b-a+1)+a;
+        }
+
+    for(int i=0;i<1000;i++)
+        {
+            if(p[i]>50)
+                {
+                    n++;
+                    cout<<p[i]<<" ";
+                }
+
+        }
+        cout<<endl;
+        cout<<"Broj brojeva koji su veci od 50: "<<n;*/
+//--------------------------------------------------------------
+//2.
+    /*int a=10;
+    int b=100;
+    int npb=0;
+    int p[1000];
+    for(int i=0;i<1000;i++)
+        {
+            p[i]=rand()%(b-a+1)+a;
+        }
+
+    for(int i=0;i<1000;i++)
+        {
+            if(p[i]%2==0)
+                {
+                    cout<<p[i]<<" ";
+                    npb++;
+                }
+
+        }
+        cout<<endl;
+        cout<<"Broj parnih brojeva:"<<npb;*/
+//--------------------------------------------------------------
+//3.
+    /*int a=10;
+    int b=100;
+    int p[1000];
+
+    for(int i=0;i<1000;i++)
+        {
+            p[i]=rand()%(b-a+1)+a;
+        }
+
+    for(int i=0;i<1000;i++)
+        {
+            if(p[i]%2!=0)
+                p[i]=0;
+        }
+    for(int i=0;i<1000;i++)
+        {
+            cout<<p[i]<<" ";
+        }*/
+//--------------------------------------------------------------
+//4.
+    /*int a=10;
+    int b=100;
+    int p[1000];
+
+    for(int i=0;i<1000;i++)
+        {
+            p[i]=rand()%(b-a+1)+a;
+        }
+
+    for(int i=0;i<1000;i++)
+        {
+            if(p[i]%7==0)
+                p[i]*=-1;
+        }
+
+    for(int i=0;i<1000;i++)
+        {
+            cout<<p[i]<<" ";
+        }*/
+//--------------------------------------------------------------
+//5.
+    /*int a=10;
+    int b=100;
+    int p[1000];
+    for(int i=0;i<1000;i++)
+        p[i]=rand()%(b-a+1)+a;
+    for(int i=0;i<1000;i++){
+        if(p[i]==20){
+            break;
+            }
+        cout<<p[i]<<" ";
+    }
+
+    return 0;*/
+}
