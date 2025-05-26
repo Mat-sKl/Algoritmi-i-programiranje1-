@@ -7,6 +7,7 @@ int main()
 int p[100];
 int n[100];
 string pogadaj;
+
 cout<<"Unesi 'paran' ako mislis da ce slucajno generiran broj biti paran ili 'neparan' ako mislis da ce biti neparan: ";
 cin>>pogadaj;
 cout<<endl;
