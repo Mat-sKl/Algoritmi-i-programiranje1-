@@ -11,6 +11,7 @@ for(int i=0;i<14;i++){
            break;
    }
 }
+
 for(int i=0;i<14;i++){
     for(int j=0;j<100;j++){
         if(p[i][j]==0)
