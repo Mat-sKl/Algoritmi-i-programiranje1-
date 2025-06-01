@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    bool p[10][8]={0}; 
+    int broj;
+    int brojBrojeva = 0;
+    for (int i=0; i<10; i++){
+        cin>>broj;
+        if (broj==0)
+            break;
+        int stupac=7;
+        while (broj>0){
+            p[i][stupac]=broj%2;
+            broj/=2;
+            stupac--;
+        }
+        brojBrojeva++;
+    }
+    cout<<"Binarni oblici unesenih brojeva:";
+    for (int i=0; i<brojBrojeva; i++) {
+        for (int j=0; j<8; j++)
+            cout<<p[i][j];
+        cout<<endl;
+    }
+
+    int zbrojJedinica=0;
+    for (int i=0; i<brojBrojeva; i++) {
+        for (int j=0; j<8; j++)
+            zbrojJedinica+=p[i][j];
+    }
+
+    float prosjek=(float)zbrojJedinica/brojBrojeva;
+    cout<<"Ukupno jedinica: "<<zbrojJedinica<<endl;
+    cout<<"Prosjek jedinica po broju: "<<prosjek<<endl;
+
+    cout<<"Brojevi s više jedinica od prosjeka:";
+    for (int i=0; i<brojBrojeva; i++) {
+        int jedinice=0;
+        for (int j=0; j<8; j++)
+            jedinice+=p[i][j];
+        if (jedinice>prosjek) {
+            for (int j=0; j<8; j++)
+                cout<<p[i][j];
+            cout<<endl;
+        }
+    }
+
+    // Ispis brojeva s najviše jedinica
+    int maxJedinica = 0;
+    for (int i = 0; i < brojBrojeva; i++) {
+        int jedinice = 0;
+        for (int j = 0; j < 8; j++)
+            jedinice += p[i][j];
+        if (jedinice > maxJedinica)
+            maxJedinica = jedinice;
+    }
+
+    cout << "\nBrojevi s najviše jedinica (" << maxJedinica << "):\n";
+    for (int i = 0; i < brojBrojeva; i++) {
+        int jedinice = 0;
+        for (int j = 0; j < 8; j++)
+            jedinice += p[i][j];
+        if (jedinice == maxJedinica) {
+            for (int j = 0; j < 8; j++)
+                cout << p[i][j];
+            cout << endl;
+        }
+    }
+
+    // Pretvaranje binarnih zapisa natrag u decimalne vrijednosti
+    cout << "\nDecimalne vrijednosti binarnih zapisa:\n";
+    for (int i = 0; i < brojBrojeva; i++) {
+        int decimal = 0;
+        for (int j = 0; j < 8; j++)
+            decimal = decimal * 2 + p[i][j];
+        cout << decimal << endl;
+    }
+
+    return 0;
+}
