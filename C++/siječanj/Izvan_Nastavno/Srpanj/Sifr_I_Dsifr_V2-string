@@ -11,7 +11,7 @@ int main(){
     cin>>DorS;
     cin.ignore();
 
-    int i = 0; // brojač unesenih linija
+    int i=0;
 
     if(DorS=='S'||DorS=='s'){
         while(true){
