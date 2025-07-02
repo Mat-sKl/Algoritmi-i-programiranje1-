@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    char DorS;
+    string p[1000];
+
+    cout<<"Unesi 'S' za sifriranje ili 'D' za desifriranje"<<endl;
+    cin>>DorS;
+    cin.ignore();
+
+    int i = 0; // brojač unesenih linija
+
+    if(DorS=='S'||DorS=='s'){
+        while(true){
+            cout<<"Unos: ";
+            getline(cin,p[i]);
+            if(p[i]=="KRAJ"){
+                p[i]="";
+                break;
+            }
+            i++;
+        }
+
+        cout<<"Sifrirani tekst:"<<endl;
+        for(int k=0; k<i; k++){
+            for(int j=0;j<p[k].size();j++){
+                unsigned char ch=p[k][j];
+                ch=((ch>>1)|(ch<<7))&0xFF;
+                cout<<char(ch);
+            }
+            cout<<endl;
+        }
+    }
+    else if(DorS=='D'||DorS=='d'){
+        while(true){
+            cout<<"Unos: ";
+            getline(cin,p[i]);
+            if(p[i]=="KRAJ"){
+                p[i]="";
+                break;
+            }
+            i++;
+        }
+
+        cout<<"Desifrirani tekst: ";
+        for(int k=0; k<i; k++){
+            for(int j=0;j<p[k].size();j++){
+                unsigned char ch=p[k][j];
+                ch=((ch<<1)|(ch>>7))&0xFF;
+                cout<<char(ch);
+            }
+            cout<<endl;
+        }
+    }
+
+    return 0;
+}
