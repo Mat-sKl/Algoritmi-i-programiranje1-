@@ -1,0 +1,78 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+char DorS;
+char p[1000][1000];
+bool o=false;
+cout<<"Unesi 'S' za sifriranje ili 'D' za desifriranje"<<endl;
+cin>>DorS;
+if(DorS=='S' || DorS=='s'){
+    for(int i=0; i<1000; i++){
+            if(o==true){
+            break;
+            }
+        for(int j=0; j<1000; j++){
+            cin>>p[i][j];
+            if(p[i][j]=='0'){
+                p[i][j]='\0';
+                break;
+            }
+            if(p[i][j]=='1'){
+                o=true;
+                p[i][j]='\0';
+                break;
+            }
+      }
+    }
+    for(int i=0; i<1000; i++){
+            if(p[i][0]=='\0')
+                break;
+                cout<<p[i]<<" ";
+    }
+    cout<<endl;
+    for(int i=0; i<1000; i++){
+            if(p[i][0]=='\0') break;
+        for(int j=0; p[i][j]!='\0'; j++){
+            unsigned char ch=p[i][j];
+            ch=((ch >> 1)|(ch << 7)) & 0xFF;
+            cout<<char(ch);
+        }
+      }
+    }
+else if(DorS=='D' || DorS=='d'){
+    for(int i=0; i<1000; i++){
+            if(o==true){
+            break;
+            }
+        for(int j=0; j<1000; j++){
+            cin>>p[i][j];
+            if(p[i][j]=='0'){
+                p[i][j]='\0';
+                break;
+            }
+            if(p[i][j]=='1'){
+                o=true;
+                p[i][j]='\0';
+                break;
+            }
+      }
+    }
+    for(int i=0; i<1000; i++){
+            if(p[i][0]=='\0')
+                break;
+                cout<<p[i]<<" ";
+    }
+    cout<<endl;
+    for(int i=0; i<1000; i++){
+            if(p[i][0]=='\0') break;
+        for(int j=0; p[i][j]!='\0'; j++){
+            unsigned char ch=p[i][j];
+            ch=((ch << 1)|(ch >> 7)) & 0xFF;
+            cout<<char(ch);
+        }
+      }
+    }
+    }
